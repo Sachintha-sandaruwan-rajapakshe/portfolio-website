@@ -1,14 +1,13 @@
 import './App.css';
 import Hero from './components/Hero';
+import MainPage from './components/MainPage';
 import Navbar from './components/Navbar';
-import HomeIcon from "@mui/icons-material/Home";
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <HomeIcon/>
-      <Hero/>
+    <div className="bg-black min-h-screen">
+      <Navbar />
+      <MainPage/>
     </div>
   );
 }
