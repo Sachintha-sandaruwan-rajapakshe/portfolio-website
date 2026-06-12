@@ -1,38 +1,35 @@
 import React from "react";
+import AboutImage from "../assets/images/about.jpeg";
 
 function About() {
   return (
-    <div id="about" className="min-h-screen bg-slate-950 text-white px-6 py-12 flex items-center">
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <section
+      id="about"
+      className="min-h-screen bg-slate-950 text-white flex items-center py-12"
+    >
+      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
-        {/* Left Side - Text */}
-        <div className="space-y-10">
-          <h1 className="text-[30px] font-bold bg-gradient-to-r from-orange-700 via-yellow-300 to-amber-500 bg-clip-text text-transparent drop-shadow-lg">
+        {/* TEXT */}
+        <div className="space-y-6 text-center md:text-left">
+
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-orange-600 via-yellow-300 to-amber-500 bg-clip-text text-transparent">
             About Me 👨‍💻
           </h1>
 
-            <div className="tracking-wider">
-                <p className="text-gray-300 leading-relaxed mb-4 ">
-            I am a passionate Full Stack Developer who enjoys building
-            modern web and mobile applications. I love turning ideas into
-            real-world projects using clean and efficient code.
+          <p className="text-gray-300">
+           I am a passionate and motivated Full-Stack Software Developer with a strong interest in building modern, responsive, and scalable web applications. I specialize in developing end-to-end solutions using technologies like Spring Boot for backend development and React for frontend development.
           </p>
 
-          <p className="text-gray-300 leading-relaxed mb-4">
-            During my internship, I gained hands-on experience in
-            web development, teamwork, and problem-solving. I always try
-            to improve my skills and learn new technologies.
+          <p className="text-gray-300">
+            I have experience working with modern UI frameworks such as Material UI (MUI) and Tailwind CSS to create clean, user-friendly, and visually appealing interfaces. During my internship and project work, I gained hands-on experience in real-world development, improving my skills in problem-solving, teamwork, and writing clean, maintainable code.
           </p>
 
-          <p className="text-gray-300 leading-relaxed">
-            My goal is to become a professional software engineer and
-            build impactful digital products.
+          <p className="text-gray-300">
+            I enjoy learning new technologies and continuously improving my skills to stay updated with current industry trends. My goal is to build high-quality software solutions that deliver excellent performance and a great user experience.
           </p>
-            </div>
-          
 
           {/* Buttons */}
-          <div className="mt-6 flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="#projects"
               className="px-5 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition"
@@ -49,17 +46,17 @@ function About() {
           </div>
         </div>
 
-        {/* Right Side - Image / Illustration */}
-        <div className="flex justify-center">
+        {/* IMAGE */}
+        <div className="flex justify-center md:justify-end">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            src={AboutImage}
             alt="developer"
-            className="w-72 md:w-80 hover:scale-105 transition"
+            className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full shadow-lg"
           />
         </div>
 
       </div>
-    </div>
+    </section>
   );
 }
 

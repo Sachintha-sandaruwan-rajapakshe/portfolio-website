@@ -11,7 +11,7 @@ function Contact() {
 
         {/* Left Side - Info */}
         <div className="space-y-10"> 
-          <h1 className="text-[30px] font-bold bg-gradient-to-r from-orange-700 via-yellow-300 to-amber-500 bg-clip-text text-transparent drop-shadow-lg ">
+          <h1 className="text-[30px] font-bold bg-gradient-to-r from-orange-700 via-yellow-300 to-amber-500 bg-clip-text text-transparent drop-shadow-lg text-center md:text-start">
             Contact Me 📩
           </h1>
 

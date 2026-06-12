@@ -19,7 +19,7 @@ function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-10 text-gray-300 font-medium">
+        <ul className="hidden md:flex gap-10 text-gray-300 font-medium text-lg">
           <li className="hover:text-green-400"><a href="#home">Home</a></li>
           <li className="hover:text-green-400"><a href="#about">About</a></li>
           <li className="hover:text-green-400"><a href="#projects">Projects</a></li>
@@ -44,7 +44,7 @@ function Navbar() {
 
       {/* Mobile Menu (Slide) */}
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-64 bg-black/95 text-gray-300 p-6 space-y-6 transform transition-transform duration-300 ${
+        className={` md:hidden fixed top-0 right-0 h-full w-44 bg-black text-gray-300 p-6 space-y-6 transform transition-transform duration-200 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -52,12 +52,12 @@ function Navbar() {
           <CloseIcon onClick={handleClose} className="cursor-pointer" />
         </div>
 
-        <a onClick={handleClose} href="#home" className="block hover:text-green-400">Home</a>
-        <a onClick={handleClose} href="#about" className="block hover:text-green-400">About</a>
-        <a onClick={handleClose} href="#projects" className="block hover:text-green-400">Projects</a>
-        <a onClick={handleClose} href="#skills" className="block hover:text-green-400">Skills</a>
-        <a onClick={handleClose} href="#services" className="block hover:text-green-400">Services</a>
-        <a onClick={handleClose} href="#contact" className="block hover:text-green-400">Contact</a>
+        <a onClick={handleClose} href="#home" className="block hover:text-green-400 border-b-2 border-transparent hover:border-cyan-400 transition px-2 py-1 rounded">Home</a>
+        <a onClick={handleClose} href="#about" className="block hover:text-green-400 border-b-2 border-transparent hover:border-cyan-400 transition px-2 py-1 rounded">About</a>
+        <a onClick={handleClose} href="#projects" className="block hover:text-green-400 border-b-2 border-transparent hover:border-cyan-400 transition px-2 py-1 rounded">Projects</a>
+        <a onClick={handleClose} href="#skills" className="block hover:text-green-400 border-b-2 border-transparent hover:border-cyan-400 transition px-2 py-1 rounded">Skills</a>
+        <a onClick={handleClose} href="#services" className="block hover:text-green-400 border-b-2 border-transparent hover:border-cyan-400 transition px-2 py-1 rounded">Services</a>
+        <a onClick={handleClose} href="#contact" className="block hover:text-green-400 border-b-2 border-transparent hover:border-cyan-400 transition px-2 py-1 rounded">Contact</a>
       </div>
     </nav>
   );
