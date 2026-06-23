@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[85vh] flex items-center text-white overflow-hidden"
+      className="relative w-full min-h-[85vh] flex items-center text-white overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-[url('https://png.pngtree.com/thumb_back/fw800/background/20250912/pngtree-sleek-abstract-tech-design-for-professional-powerpoint-layouts-image_17979089.webp')] bg-cover bg-center" />
@@ -27,7 +27,8 @@ const Hero = () => {
           </h2>
 
           <p className="text-gray-300 max-w-md mx-auto md:mx-0">
-            Full-Stack Developer building scalable and modern web applications with Spring Boot, React, and modern UI frameworks.
+            Passionate Software Developer with experience in Java, Spring Boot, React, MUI, Tailwind CSS, and MySQL. Focused on building modern, scalable, and user-friendly web applications while continuously learning and improving development skills.
+
           </p>
 
           <a
